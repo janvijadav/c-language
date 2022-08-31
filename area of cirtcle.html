@@ -1,0 +1,31 @@
+//Prerprocessor Example
+
+//FIle Inclusion
+#include"stdio.h"
+#include<conio.h>
+
+//Simple Macro
+#define pi 3.14
+
+// Argumented Macro
+#define s(r) r*r
+
+//Nested Macro
+#define c(r) s(r)*r
+
+void main()
+{
+	float x,a,v;
+	clrscr();
+	printf("enter radius:");
+	scanf("%f",&x);
+	a=pi*s(x);
+	v=4*pi*c(x)/3;
+	printf("\n area of circle is %f",a);
+	printf("\n volume of sphere is %f",v);
+	getch();
+}
+
+
+
+
