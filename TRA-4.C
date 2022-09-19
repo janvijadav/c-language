@@ -7,12 +7,12 @@ void main()
     clrscr();
     printf("Enter n:");
     scanf("%d",&n);
-    for(i=n;i>=1;i++)
+    for(i=n;i>=1;i--)
     {
-	  for(j=n;j>=i;j--)
+	  for(j=1;j<=i;j++)
 	      printf("%2d",j);
-	  for(j=1;j<=sp;j++);
-	      printf("    ");
+	  for(j=n;j<=sp;j++);
+	      printf("  ");
 	  sp+=2;
 
 	  if(i==1)
